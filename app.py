@@ -15,7 +15,7 @@ with st.form("prediction_form"):
     PetalLengthCm = st.number_input("Petal Length: ")
     PetalWidthCm = st.number_input("Petal Width: ")
 
-    submit_val = st.form_submit_button("Predict Duration")
+    submit_val = st.form_submit_button("Predict Class")
 
 if submit_val:
     # If submit is pressed == True
@@ -36,5 +36,5 @@ if submit_val:
             p='Iris-verginica'
 
 
-        st.header("Here are the results:")
+        st.header("Here is the result:")
         st.success(f"The class predicted is {p}")
